@@ -1,36 +1,68 @@
+/* Базовые стили для всех кнопок */
 .button {
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
 }
 
-.disabled {
-}
-
-.secondary {
-}
-
+/* Default стиль (синий) */
 .default {
-}
-
-.red {
+    background-color: #1976d2;
+    color: white;
 }
 
 .default:hover {
+    background-color: #1565c0;
+}
+
+.default:active {
+    background-color: #0d47a1;
+    transform: translateY(1px);
+}
+
+/* Red стиль */
+.red {
+    background-color: #f44336;
+    color: white;
 }
 
 .red:hover {
-}
-
-.secondary:hover {
-}
-
-
-.default:active {
-}
-
-.secondary:active {
+    background-color: #d32f2f;
 }
 
 .red:active {
+    background-color: #b71c1c;
+    transform: translateY(1px);
+}
+
+/* Secondary стиль */
+.secondary {
+    background-color: #9e9e9e;
+    color: white;
+}
+
+.secondary:hover {
+    background-color: #757575;
+}
+
+.secondary:active {
+    background-color: #616161;
+    transform: translateY(1px);
+}
+
+/* Disabled состояние */
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
 }
